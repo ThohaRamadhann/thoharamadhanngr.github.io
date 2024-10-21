@@ -1,0 +1,199 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+fieldset {
+    border: 2px solid #2e3076;
+    background-color: #e0f7fa;
+    padding: 20px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2e3076;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid #2e3076;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e0f7fa;
+    border-radius: 50%;
+    border: 2px solid #2e3076;
+}
+
+.radio-container:hover input ~ .radio-checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .radio-checkmark {
+    background-color: #2e3076;
+}
+
+.radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .radio-checkmark:after {
+    display: block;
+}
+
+.radio-container .radio-checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 1%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #e0f7fa;
+    border: 2px solid #2e3076;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkbox-checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkbox-checkmark {
+    background-color: #2e3076;
+}
+
+.checkbox-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkbox-checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkbox-checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-text {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.button, .button1 {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px; 
+}
+
+
+.button1 {
+    background-color: #f44336;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;       
+    height: 11vh;             
+}
+
+
+.tabel-barang {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabel-barang th, .tabel-barang td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.tabel-barang td:first-child, .tabel-barang th:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
